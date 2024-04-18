@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Form</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: lightseagreen;
+        }
+        form{
+            width: 60vw;
+            margin: auto;
+            border: 3px solid black;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            background: linear-gradient(to right , lightCoral,lightBlue);
+            gap: 10px;
+            box-shadow: 5px 5px 10px lightseagreen;
+        }
+
+        label{
+            font-size: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+
+        }
+
+        input{
+            font-size: 20px;
+            /* border: 2px solid lightseagreen; */
+            border-radius: inherit;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Please Fill the Form</h1>
+    <form action="/submitted/appointment" method="post">
+        <label for="doctorId">DoctorId:</label>
+        <input type="number" placeholder="enter DoctorId" id="doctorId" name="doctorId">
+        <label for="patientName">Patient Name :</label>
+        <input type="text" id="patientName" placeholder="enter PatientName" name="patientName">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
